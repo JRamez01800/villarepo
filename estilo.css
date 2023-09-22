@@ -1,0 +1,656 @@
+*{
+	padding: 0;
+	margin:0;
+	-webkit-box-reflect:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+  /*background-image: url("fondo-body.jpg");*/
+  /*background-color:lightgoldenrodyellow;*/
+  background-color: #F0FFFF;
+}
+
+.logo {
+	padding-top: 5px;
+	padding-left: 10px;
+	/*background-color: orangered;*/
+   /*background: rgba(255, 0, 0, 0.5);*/
+}
+
+.contenedor {
+  height: 2000px;
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
+  /*background-color:  #F0FDDF;*/
+  background-color: lightblue;/*-----------------------------------------------------*/
+  /* background-color: white;*/
+  /*background: rgb(240, 255, 255);*/
+}
+
+.contenedor p {
+	margin-bottom: 40px;
+}
+
+/*El header contiene el logo y el menu. */
+.contenedorMenu {
+	width: 100%;/*Para que oucpe solo el 95% del tamaño total.*/
+	max-width:1000px; /*Tamaño total*/
+	margin:auto;/*margen centrado*/
+}
+ 
+header nav {
+	background:black;
+	margin-bottom: 5px; /*Establecer el margen superior del elemento <nav>*/
+}
+ 
+header nav ul {
+	list-style: none; /*Quite los estilos de la lista (qiute las viñetas)*/
+	overflow: hidden; /*El desbordamiento se recorta, y el resto del contenido será invisible*/
+}
+ 
+header nav ul li {
+	float: left; /*Lo colocamos ala izquierda*/
+}
+ 
+header nav ul li a {
+	display: block; /*Muestra un elemento como un elemento de bloque*/
+	padding: 20px; /*Eespacio alrededor del contenedor */
+	color:#fff; /*Ccolor de la letra*/
+	text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+header nav ul li a:hover {
+	background: grey; /*Fondo para cuando seleccionemos un parte del menu*/
+}
+ 
+/*Clase que agregaremos cuando el usuario haga scroll*/
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width: 100%;
+	max-width:1000px; /*Tamaño total*/
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+/*Crear cajas de diferentes tamaños*/
+.caja {
+	width: 100%;
+	max-width: 1000px;
+	height: 30px;
+	margin: auto;
+	/*background-color:red;*/   /*MODIFICACION*/
+	float: left;
+}
+/*Cajas de pagina variedad*/
+.cajaVariedad {
+	height: 140px;
+}
+
+.cajaImagenVariedad {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	margin-left: 30px;
+	float: left;
+	/*background-color: blue;*/
+}
+
+.cajaTextVar {
+	width: 800px;
+}
+
+.cajaTextVar p{
+	margin: 15px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cajaTextVar h2 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+}
+/*Fin de cajas variedad*/
+
+.caja-tam49 {
+	width: 49%;
+	max-width: 500px;
+	margin-top: 5px;
+	margin-left: 5px;
+	/*float: left;*/
+}
+.acer{
+	width: 100%;
+	height: 500px;
+   /* height:1400%;
+	/*float: left;*/
+}
+
+.caja-tam49 p {
+	padding: 5px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+	margin: 0px;
+	color: white;
+}
+ #frase1 , #video1 p{
+	width: 30%;
+	max-width: 1000px;
+	margin: 5px;
+	height: 380px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 150%;
+	float: left;
+}
+
+#video1 {
+	margin-top: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 67%;
+	height: 300px;
+	max-width: 1000px;
+	text-align: center;
+}
+
+.frase {
+	margin-top: 40px;
+	height: 400px;
+}
+
+.frase p {
+	padding: 20px; /*---------------------------------------------------------------*/
+	margin-top: 0px;
+	font-family: fantasy;/*-------------------------------------------------------*/
+}
+
+/*------------------SE AGREGGO-----------------*/
+.grande {
+	font-size: 200%;
+}
+/*----------------------------------------*/
+
+.caja3 {
+	height: 380px;
+}
+
+#reserv , #catalogo {
+	margin: 5px;
+	height: 370px;
+}
+
+.contenedorCatalogo {
+	background-color: #FFFFF0;
+	width: 1000px;
+	height: 1570px;
+}
+
+.contenedorBtnMenu {
+        margin: 20px;
+        width: 220px;
+        height: 320px;
+        padding: 20px;
+        float: left;
+        background-color: red;
+}
+
+.contenedorBtnMenu p {
+        margin: 10px;
+        font-family: impact;
+        font-size: 200%;
+}
+
+.cajaCatalogo {
+	background-color: #F5FFFA;
+	color: black;
+	float: left;
+	width: 250px; /*120px --- original*/
+	height: 320px; /*200 --- original*/
+	margin: 20px;
+        margin-left: 40px;
+	text-align: center;
+}
+.cajaCatalogo p {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cajaCatalogo h2 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin-top: 10px;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	padding: 5px;
+}
+
+.divFoto {
+	width: 230px;
+	height: 190px;
+	margin: 10px;
+	background-color: black;
+}
+
+.claseFotoCat {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.foto1{
+	background-image: url("pozole.jpg");
+}
+.foto2{
+	background-image: url("mole-poblano.jpg");
+}
+.foto3{
+	background-image: url("enchiladas.jpg");
+}
+.foto4{
+	background-image: url("COCHINITA_PIBIL_VIAJA_BONITO.jpg");
+}
+.foto5{
+	background-image: url("CHILES_EN_NOGADA_VIAJA_BONITO.jpg");
+}
+.foto6{
+	background-image: url("BARBACOA_VIAJA_BONITO.jpg");
+}
+.foto7{
+	background-image: url("TAMALES_VIAJA_BONITO.jpg");
+}
+.foto8{
+	background-image: url("TORTA_AHOGADA_VIAJA_BONITO.jpg");
+}
+.foto9{
+	background-image: url("PESCADO_ZARANDEADO_VIAJA_BONITO.jpg");
+}
+.foto10{
+	background-image: url("TACOS_VIAJA_BONITO.jpg");
+}
+
+.platillo {
+	width: 1000px;
+	height: 500px;
+	padding: 10px;
+}
+
+.contInfoPlatillo {
+	width: 100%;
+	max-width: 1000px;
+	height: 450px;
+	padding: 20px;
+	/*background-color: wheat;*/
+}
+
+.Info {
+	width: 450px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+	/*background-color: red;*/
+}
+
+.Info p {
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto1Cambio {
+	/*background-color: white;*/
+	/*background-image: url("enchiladas.jpg");*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.colorBlue {
+	background-color: blue;
+}
+
+.colorGreen {
+	background-color: green;
+}
+
+.colorBlack {
+	background-color: black;
+}
+
+
+/*Slider*/
+.slider {
+	width: 95%;
+	max-width: 1000px;
+	height: 500px;
+	margin: auto;
+	overflow: hidden; /*Mascara*/
+}
+
+.elementSlider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.svisible {
+	display: block;
+}
+
+#ele1 {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("pozole1.jpg");
+}
+
+#ele2 {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("mole-poblano1.jpg");
+}
+
+#ele3 {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("enchiladas1.jpg");
+}
+
+#ele4 {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("cochinita-pibil1.jpg");
+}
+
+/*Fin del slider*/
+.cH1,.cH2,.cH3,.cH4,.cH5,.cH6,.cH7,.cH8,.cH9,.cH10{
+   
+   width: 100%;
+   height: 5%;
+   border: 30px;
+   border: solid black;
+   background-color:cadetblue;
+   margin-bottom: 40px;
+   margin-left: 0px;
+
+
+}
+
+.imgP1, .imgP2, .imgP3,.imgP4,.imgP5,.imgP6 ,.imgP7,.imgP8,.imgP9,.imgP10{
+    width: 10%;
+    background-position-x: 80px;
+    background-position-y: 20px;
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.descripcion1,.descripcion2,.descripcion3,.descripcion4,.descripcion5,.descripcion6,.descripcion7,.descripcion8,.descripcion9,.descripcion10{
+   
+    position: relative;
+    text-align: center;
+    left: 40px;
+    bottom:100px
+     
+}
+
+.HistoriaDes{
+
+	text-align: justify;
+}
+
+.HistoriaDes{
+   
+   width: 100%;
+   height: 80%;
+   border: 30px;
+   border: solid black;
+   background-color:lightgrey;
+   margin-bottom: 50px;
+   margin-left: 0px;
+
+
+}
+
+main{
+
+	text-align: justify;
+}
+
+.AceR{
+
+   text-align: justify;  
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 150%;
+
+ }
+ .iNi{
+  left: 0px;
+  top: 50px;
+  align-self: auto; 
+}
+
+.iNa{
+  width:25%;
+  left: 0px;
+  top: 80px;
+  align-self: auto; 
+
+}
+
+.separado {
+	margin-right: 160px;
+}
+
+/*SERVICIOS*/
+.contenedorServ {
+	width: 100%;
+	max-width: 980px;
+	height: 620px;
+	margin: 10px;
+	display: none;
+}
+
+.cajaServ {
+	width: 100%;
+	max-width: 470px;
+	height: 600px;
+	margin: 10px;
+	float: left;
+}
+
+.cajaServ h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	/*color: black;*/
+	text-align: center;
+	margin: 20px;
+}
+
+/*Reservacion*/
+.imagenAnt {
+	width: 100%;
+	max-width: 450px;
+	/*width: 450px;*/
+	height: 500px;
+	margin: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("serv1.png");
+}
+
+/*Pedido*/
+.imagenDesp {
+	width: 100%;
+	max-width: 450px;
+	/*width: 450px;*/
+	height: 500px;
+	margin: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("serv2.jpg");
+}
+
+.aumenta {
+	width: 100%;
+	max-width: 980px;
+}
+
+.serVisible {
+	display: block;
+}
+
+.serInvisible {
+	display: none;
+}
+
+.inicioSesion {
+	width: 410px;
+	height: 400px;
+	padding: 30px;
+	/*margin: 0 auto;*/
+        float: left;
+        background-color: #DCDCDC;
+}
+
+.inicioSesion h1 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 230%;
+}
+
+.inicioSesion p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.divDatos {
+    padding: 20px;
+    width: 350px;
+    height: 320px;
+    /*float: left;*/
+    background-color: #DCDCDC;
+}
+
+.letraForm {
+    font-family: impact;
+    font-size: 150%;
+}
+
+.letraAviso {
+    font-family: impact;
+    font-size: 100%;
+}
+
+.tamInput {
+    width: 300px;
+    height: 30px;
+}
+
+.btnCentrado {
+    margin: 0 auto;
+}
+
+.registro {
+    width: 390px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+
+.rece1{
+  width:100%;
+  right: 40px;
+  align-self: auto; 
+
+}
+
+.invisible {
+	display: none;
+}
+
+.tablaReserv {
+    width: 560px;
+    height: 400px;
+    margin-right:  10px;
+    padding: 10px;
+    float: right;
+    background-color: #DCDCDC;
+}
+
+.tablaReserv p {
+    font-family: impact;
+}
+
+.tablaReserv h1 {
+    font-family: impact;
+    font-size: 180%;
+}
+
+.tablaReserv table {
+  border: black 7px solid;
+}
+
+.tablaReserv tbody {
+  border: blue 3px solid;
+}
+
+.tablaReserv tr {
+    border: green 3px solid;
+}
+
+.tablaReserv td {
+    border: black 3px solid;
+}
+
+.cellblueF
+{
+	background-color:blue;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cellblue
+{
+	background-color:dodgerblue;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cellRed
+{
+	background-color:sandybrown;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+.cellOrange
+{
+	background-color:red;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cellGreen
+{
+	background-color:seagreen;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cellYellow
+{
+	background-color:lightgoldenrodyellow;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
